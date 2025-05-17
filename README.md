@@ -19,16 +19,16 @@ guiText := guiStatus.Add("Text", "vStatusText x30 y6 w180 h30 Center cRed", "")
 ; 'V' Butonu
 guiVKey := guiStatus.Add("Text", "x40 y8 w30 h30 cRed", "V")  ; guiVKey'e metin ekliyoz 
 
-; GUI’yi Göster
+;
 UpdateGUI()
 FadeIn(guiStatus.Hwnd)
 guiStatus.Show("x10 y10 NoActivate")
 WinSetTransparent(230, guiStatus.Hwnd)
 
-; Köşeleri yuvarlamak 
+;
 RoundCorners(guiStatus.Hwnd, 16)
 
-; Hotkey Tanımlamak 
+;
 SetHotkey()
 
 ; === Sol Tık Makrosu ===
