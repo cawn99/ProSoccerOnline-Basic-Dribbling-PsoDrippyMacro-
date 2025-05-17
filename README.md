@@ -6,7 +6,7 @@ global macroToggleKey := "v"
 global toggleHotkey
 global guiStatus, guiText, guiVKey, waitingForKey := false
 
-; === GUI OLUŞTURMA ===
+; === GUI ===
 guiStatus := Gui("+AlwaysOnTop -Caption +ToolWindow +LastFound +E0x80020")
 guiStatus.BackColor := "050A16"  ; koyu gece mavisi bir tema beyler 
 guiStatus.MarginX := 12
@@ -16,7 +16,7 @@ guiStatus.MarginY := 7
 guiStatus.Add("Text", "vStatusIcon x5 y8 w15 Center cRed", "●")
 guiText := guiStatus.Add("Text", "vStatusText x30 y6 w180 h30 Center cRed", "")
 
-; 'V' Butonunu Gösterme (Normal V)
+; 'V' Butonu
 guiVKey := guiStatus.Add("Text", "x40 y8 w30 h30 cRed", "V")  ; guiVKey'e metin ekliyoz 
 
 ; GUI’yi Göster
